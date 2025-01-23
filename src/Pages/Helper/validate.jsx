@@ -68,4 +68,3 @@ function usernameVerify(error = {}, values) {
   }
   return error;
 }
-

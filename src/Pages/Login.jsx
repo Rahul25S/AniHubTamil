@@ -72,15 +72,7 @@ const Login = () => {
           >
             Register Now
           </Link>
-          <div className='text-sm'>
-          <span className='text-gray-500 '>Forgot Password? </span>
-          <Link
-            to="/recovery"
-            className="py-2 mt-4 text-red-600"
-          >
-            Recover Now
-          </Link>
-          </div>
+          
           
         </div>
       </div>
