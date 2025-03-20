@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import image1 from "../assets/image1.jpg";
+import image1 from "../assets/image1.png";
 import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
 import image4 from "../assets/image4.jpg";
@@ -14,17 +14,17 @@ const images = [image1, image2, image3, image4, image5];
 
 const imageTexts = [
   {
-    title: "Solo Leveling",
-    description: "Season 2 Releasing JANUARY, 2025. New visual is also out!",
-    dynamicLabel1: "Ep-0",
-    dynamicLabel2: "13",
-    dynamicLabel3: "MAL Score: 8.18",
-    showExtras: false,
-    updateDate: "16-Sep-2024",
+    title: "Oshi no Ko",
+    description: "In the entertainment world, celebrities often show exaggerated versions of themselves to the public, concealing their true thoughts and struggles beneath elaborate lies. Fans buy into these fabrications, showering their idols with undying love and support, until ...",
+    dynamicLabel1: "Ep-11",
+    dynamicLabel2: "11",
+    dynamicLabel3: "MAL Score: 9.33",
+    showExtras: true,
+    updateDate: "25-Mar-2025",
   },
   {
-    title: "Dragon Ball",
-    description: "Dragon Ball Anime officially returns on October 11",
+    title: "Record of Ragnarok",
+    description: "Record of Ragnarok Season 3 New Teaser is out! The production has officially started, no release date as of now.",
     dynamicLabel1: "Ep-4",
     dynamicLabel2: "170",
     dynamicLabel3: "MAL Score: 7.29",
@@ -32,27 +32,27 @@ const imageTexts = [
     updateDate: "16-Sep-2024",
   },
   {
-    title: "Jujutsu Kaisen",
-    description: "Season 3 New info in December!",
+    title: "Classroom of the Elite",
+    description: "On the surface, Koudo Ikusei Senior High School is a utopia. The students enjoy an unparalleled amount of freedom, and it is ranked highly in Japan. However, the reality is less than ideal. Four classes, A through D, are ranked in order of merit, and only the top...",
     dynamicLabel1: "Ep-12",
-    dynamicLabel2: "24",
-    dynamicLabel3: "MAL Score: 8.08",
-    showExtras: false,
-    updateDate: "16-Sep-2024",
-  },
-  {
-    title: "7th Time Loop",
-    description:
-      "Rishe Irmgard Weitzner finds herself in a familiar situation: her fiancé is publicly breaking off their engagement...",
-    dynamicLabel1: "Ep-2",
     dynamicLabel2: "12",
-    dynamicLabel3: "MAL Score: 7.64",
+    dynamicLabel3: "MAL Score: 7.86",
     showExtras: true,
     updateDate: "16-Sep-2024",
   },
   {
-    title: "One Piece",
-    description: "One Piece Remake won't be censored like the original!",
+    title: "One-Punch Man",
+    description:
+      "One-Punch Man Season 3 begins in October 2025, took them 6 years to make a sequel!",
+    dynamicLabel1: "Ep-2",
+    dynamicLabel2: "12",
+    dynamicLabel3: "MAL Score: 7.64",
+    showExtras: false,
+    updateDate: "16-Sep-2024",
+  },
+  {
+    title: "Solo Leveling",
+    description: "Solo Leveling beats One Piece! on crunchyroll (4.9/598.2k)",
     dynamicLabel1: "Ep-4",
     dynamicLabel2: "23",
     dynamicLabel3: "MAL Score: 8.85",
@@ -62,9 +62,9 @@ const imageTexts = [
 ];
 
 const imageUrls = [
-  "/My-Hero-Academia",
+  "/My star",
   "/Black-Clover",
-  "/That-Time-I-Got-Reincarnated-as-a-Slime",
+  "/Classroom of the Elite",
   "/7th-Time-Loop-The-Villainess-Enjoys-a-Carefree-Life-Married-to-Her-Worst-Enemy",
   "/Ranking-of-Kings",
 ];
@@ -86,7 +86,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-[40vh] lg:h-[85vh] overflow-hidden">
+    <div className="relative w-full h-[40vh] lg:h-[100vh] overflow-hidden">
       <div
         className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentImage * 100}%)` }}
@@ -98,7 +98,7 @@ const Hero = () => {
               src={image}
               alt={`Slide ${index + 1}`}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent" />
             <div className="absolute bottom-0 left-1 p-1 md:bottom-5 md:left-4 md:right-16 md:p-4 flex flex-col">
               <h2 className="hero-title text-4xl md:text-5xl lg:text-6xl font-nsansTitle">
                 {imageTexts[index].title}

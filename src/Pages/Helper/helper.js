@@ -23,7 +23,7 @@ return{error:"Password doesn't Match...!"}
 export async function registerUser(credentials){
     try{
         const{data:{msg},status}=await axios.post(`/api/register`,credentials)
-        let{username,email}=credentials
+        let{username,email}=credentials 
         //send email
         if(status==201){
             await axios.post('/api/registerMail',{username,userEmail:email,text:msg})
@@ -34,13 +34,13 @@ export async function registerUser(credentials){
     }
 }
 //login function
-export async function verifyPassword({username,password}){
-    try{
-        if(username){
-            const{data}=await axios.post('/api/login',{username,password})
-            return Promise.resolve({data})
+export async function verifyPassword({ email, password }) {
+    try {
+        if (email) {
+            const { data } = await axios.post('/api/login', { email, password });
+            return Promise.resolve({ data });
         }
-    }catch(error){
-        return Promise.reject({error:"Password doesn't Match...!"})
+    } catch (error) {
+        return Promise.reject({ error: "Password doesn't Match...!" });
     }
 }
