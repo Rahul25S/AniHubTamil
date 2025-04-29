@@ -11,8 +11,6 @@ const MovieBox = ({
   redirectLink,
 }) => {
   const { user } = useAuth();
-
-  // Handle click event to redirect to the movie's details page
   const handleBoxClick = () => {
     window.location.href = redirectLink;
   };
@@ -28,7 +26,7 @@ const MovieBox = ({
         className="w-full h-[80%] object-cover rounded-md"
       />
       <div className="flex gap-2 mt-2">
-      <span className="px-2 text-sm lg:py-1 lg:text-xs text-white bg-gray-600 rounded">
+        <span className="px-2 text-sm lg:py-1 lg:text-xs text-white bg-gray-600 rounded">
           {label1}
         </span>
         <span className="px-2 text-sm lg:py-1 lg:text-xs text-white bg-blue-600 rounded">
@@ -40,7 +38,6 @@ const MovieBox = ({
         <span className="text-sm px-2 lg:py-1 text-white bg-pink-700 rounded">
           {label4}
         </span>
-        
       </div>
       <h3 className="mt-2 text-xs lg:text-sm text-white">{title}</h3>
     </div>

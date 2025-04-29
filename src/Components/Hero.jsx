@@ -15,7 +15,8 @@ const images = [image1, image2, image3, image4, image5];
 const imageTexts = [
   {
     title: "Oshi no Ko",
-    description: "In the entertainment world, celebrities often show exaggerated versions of themselves to the public, concealing their true thoughts and struggles beneath elaborate lies. Fans buy into these fabrications, showering their idols with undying love and support, until ...",
+    description:
+      "In the entertainment world, celebrities often show exaggerated versions of themselves to the public, concealing their true thoughts and struggles beneath elaborate lies. Fans buy into these fabrications, showering their idols with undying love and support, until ...",
     dynamicLabel1: "Ep-11",
     dynamicLabel2: "11",
     dynamicLabel3: "MAL Score: 9.33",
@@ -24,7 +25,8 @@ const imageTexts = [
   },
   {
     title: "Record of Ragnarok",
-    description: "Record of Ragnarok Season 3 New Teaser is out! The production has officially started, no release date as of now.",
+    description:
+      "Record of Ragnarok Season 3 New Teaser is out! The production has officially started, no release date as of now.",
     dynamicLabel1: "Ep-4",
     dynamicLabel2: "170",
     dynamicLabel3: "MAL Score: 7.29",
@@ -33,7 +35,8 @@ const imageTexts = [
   },
   {
     title: "Classroom of the Elite",
-    description: "On the surface, Koudo Ikusei Senior High School is a utopia. The students enjoy an unparalleled amount of freedom, and it is ranked highly in Japan. However, the reality is less than ideal. Four classes, A through D, are ranked in order of merit, and only the top...",
+    description:
+      "On the surface, Koudo Ikusei Senior High School is a utopia. The students enjoy an unparalleled amount of freedom, and it is ranked highly in Japan. However, the reality is less than ideal. Four classes, A through D, are ranked in order of merit, and only the top...",
     dynamicLabel1: "Ep-12",
     dynamicLabel2: "12",
     dynamicLabel3: "MAL Score: 7.86",
@@ -77,7 +80,7 @@ const Hero = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImage((img) => (img + 1) % totalImages);
-    }, 400000);
+    }, 4000);
     return () => clearInterval(intervalId);
   }, [totalImages]);
 

@@ -1,18 +1,15 @@
-
-import onepiece from "../assets/1.jpg"
-import sololeveling from "../assets/2.jpg"
-import SakamotoDays from "../assets/4.jpg"
-import BlueBox from "../assets/8.jpg"
-import Dandadan from "../assets/9.jpg"
-import WindBreaker from "../assets/10.jpg"
-import Naruto from "../assets/11.jpg"
-import BlackClover from "../assets/13.jpg"
-import ClassroomElite from "../assets/19.png"
-import MyStar from "../assets/20.jpg"
+import onepiece from "../assets/1.jpg";
+import sololeveling from "../assets/2.jpg";
+import SakamotoDays from "../assets/4.jpg";
+import BlueBox from "../assets/8.jpg";
+import Dandadan from "../assets/9.jpg";
+import WindBreaker from "../assets/10.jpg";
+import Naruto from "../assets/11.jpg";
+import BlackClover from "../assets/13.jpg";
+import ClassroomElite from "../assets/19.png";
+import MyStar from "../assets/20.jpg";
 
 export const movieData = [
-  
-
   {
     id: "onepiece",
     label2: "1122",
@@ -20,10 +17,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: onepiece,
-    title:
-      "One Piece",
-    redirectLink:
-      "/onepiece",
+    title: "One Piece",
+    redirectLink: "/onepiece",
   },
   {
     id: "sololeveling",
@@ -32,10 +27,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: sololeveling,
-    title:
-      "Solo Leveling",
-    redirectLink:
-      "/sololeveling",
+    title: "Solo Leveling",
+    redirectLink: "/sololeveling",
   },
   {
     id: "Sakamoto Days",
@@ -44,10 +37,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: SakamotoDays,
-    title:
-      "Sakamoto Days",
-    redirectLink:
-      "/Sakamoto Days",
+    title: "Sakamoto Days",
+    redirectLink: "/Sakamoto Days",
   },
   {
     id: "Blue Box",
@@ -56,10 +47,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: BlueBox,
-    title:
-      "Blue Box",
-    redirectLink:
-      "/Blue Box",
+    title: "Blue Box",
+    redirectLink: "/Blue Box",
   },
   {
     id: "Blue Box",
@@ -68,10 +57,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: Dandadan,
-    title:
-      "Dandadan",
-    redirectLink:
-      "/Dandadan",
+    title: "Dandadan",
+    redirectLink: "/Dandadan",
   },
   {
     id: "Wind Breaker",
@@ -80,10 +67,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: WindBreaker,
-    title:
-      "Wind Breaker",
-    redirectLink:
-      "/Wind Breaker",
+    title: "Wind Breaker",
+    redirectLink: "/Wind Breaker",
   },
   {
     id: "Naruto",
@@ -92,10 +77,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: Naruto,
-    title:
-      "Naruto",
-    redirectLink:
-      "/Naruto",
+    title: "Naruto",
+    redirectLink: "/Naruto",
   },
   {
     id: "BlackClover",
@@ -104,10 +87,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: BlackClover,
-    title:
-      "Black Clover",
-    redirectLink:
-      "/Black Clover",
+    title: "Black Clover",
+    redirectLink: "/Black Clover",
   },
   {
     id: "Classroom of the Elite",
@@ -116,10 +97,8 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: ClassroomElite,
-    title:
-      "Classroom of the Elite",
-    redirectLink:
-      "/Classroom of the Elite",
+    title: "Classroom of the Elite",
+    redirectLink: "/Classroom of the Elite",
   },
   {
     id: "My Star",
@@ -128,9 +107,7 @@ export const movieData = [
     label1: "PG-13",
     label4: "HD",
     imageSrc: MyStar,
-    title:
-      "My Star",
-    redirectLink:
-      "/My Star",
+    title: "My Star",
+    redirectLink: "/My Star",
   },
 ];

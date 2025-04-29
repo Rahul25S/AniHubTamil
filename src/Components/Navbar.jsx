@@ -6,24 +6,12 @@ const Navbar = () => {
   const [navbarBg, setNavbarBg] = useState("bg-transparent");
   const [user, setUser] = useState(null);
 
-  // Check if user is logged in from localStorage
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
-      setUser(JSON.parse(storedUser)); // Set user state from localStorage
+      setUser(JSON.parse(storedUser));
     }
   }, []);
-
-  // Handle logout functionality
-  const handleLogout = () => {
-    localStorage.removeItem("token"); // Remove token
-    localStorage.removeItem("user"); // Remove user data
-    setUser(null); // Clear user state
-    navigate("/login"); // Redirect to login
-    window.location.reload(); // Refresh page to update navbar
-  };
-
-  // Change navbar background color on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -40,12 +28,9 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full p-1 lg:p-2 flex items-center justify-between fixed z-50 ${navbarBg} transition-all duration-300`}>
-      {/* Logo */}
       <Link to="/">
         <img src="anihubtamil1.png" alt="AniHub Tamil" className="lg:h-16 h-8" />
       </Link>
-
-      {/* User navigation links */}
       {user ? (
         <div className="flex items-center">
           <Link to="/profile">
@@ -53,7 +38,7 @@ const Navbar = () => {
               Profile
             </button>
           </Link>
-          
+    
         </div>
       ) : (
         <div className="flex items-center">
