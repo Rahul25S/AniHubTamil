@@ -29,14 +29,14 @@ const App = () => {
         <Route path="/profile" element={<Profile />}/>
         <Route path="/onepiece" element={<Onepiece /> }/>
         <Route path="/sololeveling" element={<Sololeveling /> }/>
-        <Route path="/Sakamoto Days" element={<SakamotoDays /> }/>
-        <Route path="/Blue Box" element={<BlueBox /> }/>
+        <Route path="/SakamotoDays" element={<SakamotoDays /> }/>
+        <Route path="/BlueBox" element={<BlueBox /> }/>
         <Route path="/Dandadan" element={<Dandadan /> }/>
-        <Route path="/Wind Breaker" element={<WindBreaker /> }/> 
+        <Route path="/WindBreaker" element={<WindBreaker /> }/> 
         <Route path="/Naruto" element={<Naruto /> }/> 
-        <Route path="/Black Clover" element={<BlackClover /> }/> 
-        <Route path="/Classroom of the Elite" element={<ClassroomElite /> }/> 
-        <Route path="/My Star" element={<MyStar /> }/> 
+        <Route path="/BlackClover" element={<BlackClover /> }/> 
+        <Route path="/ClassroomoftheElite" element={<ClassroomElite /> }/> 
+        <Route path="/MyStar" element={<MyStar /> }/> 
         <Route path="/*" element={<PageNotFound />}/></Routes>
     </AuthProvider>
   );

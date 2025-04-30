@@ -38,7 +38,7 @@ export const movieData = [
     label4: "HD",
     imageSrc: SakamotoDays,
     title: "Sakamoto Days",
-    redirectLink: "/Sakamoto Days",
+    redirectLink: "/SakamotoDays",
   },
   {
     id: "Blue Box",
@@ -48,7 +48,7 @@ export const movieData = [
     label4: "HD",
     imageSrc: BlueBox,
     title: "Blue Box",
-    redirectLink: "/Blue Box",
+    redirectLink: "/BlueBox",
   },
   {
     id: "Blue Box",
@@ -68,7 +68,7 @@ export const movieData = [
     label4: "HD",
     imageSrc: WindBreaker,
     title: "Wind Breaker",
-    redirectLink: "/Wind Breaker",
+    redirectLink: "/WindBreaker",
   },
   {
     id: "Naruto",
@@ -88,7 +88,7 @@ export const movieData = [
     label4: "HD",
     imageSrc: BlackClover,
     title: "Black Clover",
-    redirectLink: "/Black Clover",
+    redirectLink: "/BlackClover",
   },
   {
     id: "Classroom of the Elite",
@@ -98,7 +98,7 @@ export const movieData = [
     label4: "HD",
     imageSrc: ClassroomElite,
     title: "Classroom of the Elite",
-    redirectLink: "/Classroom of the Elite",
+    redirectLink: "/ClassroomoftheElite",
   },
   {
     id: "My Star",
@@ -108,6 +108,6 @@ export const movieData = [
     label4: "HD",
     imageSrc: MyStar,
     title: "My Star",
-    redirectLink: "/My Star",
+    redirectLink: "/MyStar",
   },
 ];

@@ -65,9 +65,9 @@ const imageTexts = [
 ];
 
 const imageUrls = [
-  "/My star",
-  "/Black-Clover",
-  "/Classroom of the Elite",
+  "/Mystar",
+  "/BlackClover",
+  "/ClassroomoftheElite",
   "/7th-Time-Loop-The-Villainess-Enjoys-a-Carefree-Life-Married-to-Her-Worst-Enemy",
   "/Ranking-of-Kings",
 ];
