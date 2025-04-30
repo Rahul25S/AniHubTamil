@@ -22,7 +22,7 @@ const Login = () => {
     onSubmit: async (values) => {
       setLoading(true);
       try {
-        const response = await axios.post("http://localhost:5000/api/login", values);
+        const response = await axios.post("https://final-anihub-backend-1.onrender.com/api/login", values);
         toast.success("Login Successful!");
 
         // Store user data in localStorage

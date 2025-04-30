@@ -29,7 +29,7 @@ const Signup = () => {
 
       if (Object.keys(errors).length === 0) {
         try {
-          const response = await fetch('http://localhost:5000/api/register', {
+          const response = await fetch('https://final-anihub-backend-1.onrender.com/api/register', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'

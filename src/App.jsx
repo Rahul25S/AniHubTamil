@@ -5,11 +5,9 @@ import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Profile from './Pages/Profile';
 import Navbar from './Components/Navbar';
-import { AuthProvider } from './context/AuthContext';  // Import the AuthProvider
-//import ProtectedRoute from './Components/ProtectedRoute';
+import { AuthProvider } from './context/AuthContext';
 import Onepiece from './Anime/onepiece'
 import Sololeveling from './Anime/sololeveling';
-
 import PageNotFound from './Pages/PageNotFound';
 import SakamotoDays from './Anime/Sakamoto Days';
 import BlueBox from './Anime/Blue Box';
@@ -19,7 +17,7 @@ import Naruto from './Anime/Naruto';
 import BlackClover from './Anime/Black Clover';
 import ClassroomElite from './Anime/Classroom of the Elite';
 import MyStar from './Anime/My Star';
-//<ProtectedRoute></ProtectedRoute>
+
 const App = () => {
   return (
     <AuthProvider>

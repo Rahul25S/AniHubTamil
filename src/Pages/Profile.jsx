@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaSignOutAlt } from "react-icons/fa";
-import axios from "axios";
-import MovieBox from "../Components/MovieBox";
-import { movieData } from "../Components/MovieData";
 
 const animatedTexts = ["勇気 (Courage)", "友情 (Friendship)", "夢 (Dream)", "力 (Power)", "希望 (Hope)"];
-
-
-
 const Profile = () => {
   const navigate = useNavigate();
-  const [likedMovies, setLikedMovies] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   // Check if the user is logged in
